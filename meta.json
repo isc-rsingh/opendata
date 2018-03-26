@@ -1,0 +1,90 @@
+{
+    "type": "DataCatalog",
+    "title": "My Data Catalog",
+    "modified": "2018-02-02",
+    "accessLevel": "public",
+    "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+    "datasets": [
+        {
+            "@context": "http://schema.org/",
+            "@type": "dcat:Dataset",
+            "identifier": "income-us-census-zip-2014",
+            "title": "US Income",
+            "description": "US ACS income from 2014 fields I have decided are most useful aggregated to the zip code level.", 
+            "modified": "2017-10-03",
+            "distribution": [{
+                "downloadURL": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/demographics/x19_income.csv",
+                "format": "CSV",
+                "mediaType": "text/csv",
+                "sizeInBytes": "16295289"
+            }],
+            "keyword": ["demographics","income"],
+            "spatial": "United States",
+            "bureauCode": ["006:07"],
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Raj Singh"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Raj Singh",
+                "hasEmail": "rajsingh@email.com"
+            },
+            "accessLevel": "public",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/"
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "dcat:Dataset",
+            "identifier": "sales-jan-2009",
+            "title": "Sample POS data",
+            "description": "Sample point of sale data for 3 products. This data set has been floating around the Internet for years", 
+            "modified": "2009-12-31",
+            "distribution": [{
+                "downloadURL": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/retail/salesjan2009.csv",
+                "format": "CSV",
+                "mediaType": "text/csv",
+                "sizeInBytes": "125655"
+            }],
+            "keyword": ["retail","sales","pos","transactions"],
+            "spatial": "World",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Raj Singh"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Raj Singh",
+                "hasEmail": "rajsingh@email.com"
+            },
+            "accessLevel": "public"
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "dcat:Dataset",
+            "identifier": "us-president-election-2016",
+            "title": "US Presidential Election Results by County 2016",
+            "description": "US Presidential Election Results by County. Copied from https://github.com/benradford/electiogeddon",
+            "modified": "2017-06-03",
+            "distribution": [{
+                "downloadURL": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election2016/county_election_results.csv",
+                "format": "CSV",
+                "mediaType": "text/csv",
+                "sizeInBytes": "3316200"
+            }],
+            "keyword": ["election","president","democracy"],
+            "spatial": "United States",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Raj Singh"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Raj Singh",
+                "hasEmail": "rajsingh@email.com"
+            },
+            "accessLevel": "public",
+            "license": "https://opensource.org/licenses/MIT"
+        }
+    ]
+}
