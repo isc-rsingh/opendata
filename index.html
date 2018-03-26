@@ -1,10 +1,54 @@
-<html>
-    <head>
-        <title></title>
-        <script src="./meta.2.js"></script>
-    </head>
-    <body onload="insertMetadata()">
-        <h2 id="datacatalogtitle"></h2>
-        <div id="datacatalog"></div>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>My Data Catalog</title></head><body><script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Dataset",
+"identifier": "income-us-census-zip-2014",
+"name": "US Income",
+"description": "US ACS income from 2014 fields I have decided are most useful aggregated to the zip code level.",
+"keywords": ["demographics","income"],
+"distribution": {"fileFormat": "CSV",
+"contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/demographics/x19_income.csv"
+}}
+</script>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Dataset",
+"identifier": "sales-jan-2009",
+"name": "Sample POS data",
+"description": "Sample point of sale data for 3 products. This data set has been floating around the Internet for years",
+"keywords": ["retail","sales","pos","transactions"],
+"distribution": {"fileFormat": "CSV",
+"contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/retail/salesjan2009.csv"
+}}
+</script>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Dataset",
+"identifier": "us-president-election-2016",
+"name": "US Presidential Election Results by County 2016",
+"description": "US Presidential Election Results by County. Copied from https://github.com/benradford/electiogeddon",
+"keywords": ["election","president","democracy"],
+"distribution": {"fileFormat": "CSV",
+"contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election2016/county_election_results.csv"
+}}
+</script>
+<h2>US Income</h2>
+<i>(income-us-census-zip-2014)</i>
+<div class="description">US ACS income from 2014 fields I have decided are most useful aggregated to the zip code level.</div>
+<div class="keywords">Keywords: demographics,income</div>
+<div class="download-link">Download CSV: <a href="http://s3-api.us-geo.objectstorage.softlayer.net/opendata/demographics/x19_income.csv">http://s3-api.us-geo.objectstorage.softlayer.net/opendata/demographics/x19_income.csv</a></div>
+<h2>Sample POS data</h2>
+<i>(sales-jan-2009)</i>
+<div class="description">Sample point of sale data for 3 products. This data set has been floating around the Internet for years</div>
+<div class="keywords">Keywords: retail,sales,pos,transactions</div>
+<div class="download-link">Download CSV: <a href="http://s3-api.us-geo.objectstorage.softlayer.net/opendata/retail/salesjan2009.csv">http://s3-api.us-geo.objectstorage.softlayer.net/opendata/retail/salesjan2009.csv</a></div>
+<h2>US Presidential Election Results by County 2016</h2>
+<i>(us-president-election-2016)</i>
+<div class="description">US Presidential Election Results by County. Copied from https://github.com/benradford/electiogeddon</div>
+<div class="keywords">Keywords: election,president,democracy</div>
+<div class="download-link">Download CSV: <a href="http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election2016/county_election_results.csv">http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election2016/county_election_results.csv</a></div>
+</body></html>
