@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>My Data Catalog</title></head><body><script type="application/ld+json">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Data Catalog</title>
+</head>
+<body>
+<h1>My Data Catalog</h1>
+<script type="application/ld+json">
 {
 "@context": "http://schema.org",
 "@type": "Dataset",
-"identifier": "income-us-census-zip-2014",
+"identifier": "homes-1m-redfin-2016",
 "name": "US Income",
-"description": "US ACS income from 2014 fields I have decided are most useful aggregated to the zip code level.",
-"keywords": ["demographics","income"],
-"distribution": {"fileFormat": "CSV",
-"contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/demographics/x19_income.csv"
-}}
+"description": "Homes that sold for over a million USD in northeastern Massachusetts in a 3-month period in late 2016.",
+"keywords": ["housing","income"],
+"distribution": [{
+"fileFormat": "CSV",
+"contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.csv"
+},
+{
+"fileFormat": "GeoJSON",
+"contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.geojson"
+}]}
 </script>
 <script type="application/ld+json">
 {
@@ -20,9 +31,10 @@
 "name": "Sample POS data",
 "description": "Sample point of sale data for 3 products. This data set has been floating around the Internet for years",
 "keywords": ["retail","sales","pos","transactions"],
-"distribution": {"fileFormat": "CSV",
+"distribution": [{
+"fileFormat": "CSV",
 "contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/retail/salesjan2009.csv"
-}}
+}]}
 </script>
 <script type="application/ld+json">
 {
@@ -32,15 +44,17 @@
 "name": "US Presidential Election Results by County 2016",
 "description": "US Presidential Election Results by County. Copied from https://github.com/benradford/electiogeddon",
 "keywords": ["election","president","democracy"],
-"distribution": {"fileFormat": "CSV",
-"contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election2016/county_election_results.csv"
-}}
+"distribution": [{
+"fileFormat": "CSV",
+"contentUrl": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election/county_election_results.csv"
+}]}
 </script>
 <h2>US Income</h2>
-<i>(income-us-census-zip-2014)</i>
-<div class="description">US ACS income from 2014 fields I have decided are most useful aggregated to the zip code level.</div>
-<div class="keywords">Keywords: demographics,income</div>
-<div class="download-link">Download CSV: <a href="http://s3-api.us-geo.objectstorage.softlayer.net/opendata/demographics/x19_income.csv">http://s3-api.us-geo.objectstorage.softlayer.net/opendata/demographics/x19_income.csv</a></div>
+<i>(homes-1m-redfin-2016)</i>
+<div class="description">Homes that sold for over a million USD in northeastern Massachusetts in a 3-month period in late 2016.</div>
+<div class="keywords">Keywords: housing,income</div>
+<div class="download-link">Download CSV: <a href="http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.csv">http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.csv</a></div>
+<div class="download-link">Download GeoJSON: <a href="http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.geojson">http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.geojson</a></div>
 <h2>Sample POS data</h2>
 <i>(sales-jan-2009)</i>
 <div class="description">Sample point of sale data for 3 products. This data set has been floating around the Internet for years</div>
@@ -50,5 +64,5 @@
 <i>(us-president-election-2016)</i>
 <div class="description">US Presidential Election Results by County. Copied from https://github.com/benradford/electiogeddon</div>
 <div class="keywords">Keywords: election,president,democracy</div>
-<div class="download-link">Download CSV: <a href="http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election2016/county_election_results.csv">http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election2016/county_election_results.csv</a></div>
+<div class="download-link">Download CSV: <a href="http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election/county_election_results.csv">http://s3-api.us-geo.objectstorage.softlayer.net/opendata/election/county_election_results.csv</a></div>
 </body></html>
