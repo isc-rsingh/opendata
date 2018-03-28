@@ -9,7 +9,7 @@
             "@context": "http://schema.org/",
             "@type": "dcat:Dataset",
             "identifier": "homes-1m-redfin-2016",
-            "title": "US Income",
+            "title": "Million Dollar Home Sales",
             "description": "Homes that sold for over a million USD in northeastern Massachusetts in a 3-month period in late 2016.", 
             "modified": "2017-10-03",
             "distribution": [{
