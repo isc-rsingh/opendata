@@ -8,23 +8,51 @@
         {
             "@context": "http://schema.org/",
             "@type": "dcat:Dataset",
+            "identifier": "boston_isd_construction_offhours",
+            "title": "Boston After Hours Construction",
+            "description": "",
+            "modified": "2021-12-17",
+            "distribution": [{
+                    "downloadURL": "https://data.boston.gov/dataset/bca08adc-090a-4d91-99f6-ad482c5d7ac9/resource/c66524ea-36f5-43b1-aa9c-da36d7cb8744/download/tmpx_gb53km.csv",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "sizeInBytes": ""
+                }
+            ],
+            "keyword": ["construction"],
+            "spatial": "Boston, Massachusetts, United States",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Boston Department of Innovation and Technology"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Inspectional Services Department",
+                "hasEmail": "isdoffhourinspection@boston.gov"
+            },
+            "accessLevel": "public"
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "dcat:Dataset",
             "identifier": "homes-1m-redfin-2016",
             "title": "Million Dollar Home Sales",
-            "description": "Homes that sold for over a million USD in northeastern Massachusetts in a 3-month period in late 2016.", 
+            "description": "Homes that sold for over a million USD in northeastern Massachusetts in a 3-month period in late 2016.",
             "modified": "2017-10-03",
             "distribution": [{
-                "downloadURL": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.csv",
-                "format": "CSV",
-                "mediaType": "text/csv",
-                "sizeInBytes": "102092"
-            },
-            {
-                "downloadURL": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.geojson",
-                "format": "GeoJSON",
-                "mediaType": "application/json",
-                "sizeInBytes": "358400"
-            }],
-            "keyword": ["housing","income"],
+                    "downloadURL": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.csv",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "sizeInBytes": "102092"
+                },
+                {
+                    "downloadURL": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/misc/milliondollarhomes.geojson",
+                    "format": "GeoJSON",
+                    "mediaType": "application/json",
+                    "sizeInBytes": "358400"
+                }
+            ],
+            "keyword": ["housing", "income"],
             "spatial": "Massachusetts, United States",
             "publisher": {
                 "@type": "org:Organization",
@@ -42,7 +70,7 @@
             "@type": "dcat:Dataset",
             "identifier": "sales-jan-2009",
             "title": "Sample POS data",
-            "description": "Sample point of sale data for 3 products. This data set has been floating around the Internet for years", 
+            "description": "Sample point of sale data for 3 products. This data set has been floating around the Internet for years",
             "modified": "2009-12-31",
             "distribution": [{
                 "downloadURL": "http://s3-api.us-geo.objectstorage.softlayer.net/opendata/retail/salesjan2009.csv",
@@ -50,7 +78,7 @@
                 "mediaType": "text/csv",
                 "sizeInBytes": "125655"
             }],
-            "keyword": ["retail","sales","pos","transactions"],
+            "keyword": ["retail", "sales", "pos", "transactions"],
             "spatial": "World",
             "publisher": {
                 "@type": "org:Organization",
@@ -76,7 +104,7 @@
                 "mediaType": "text/csv",
                 "sizeInBytes": "3316200"
             }],
-            "keyword": ["election","president","democracy"],
+            "keyword": ["election", "president", "democracy"],
             "spatial": "United States",
             "publisher": {
                 "@type": "org:Organization",
