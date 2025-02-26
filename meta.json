@@ -5,6 +5,28 @@
     "accessLevel": "public",
     "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
     "datasets": [
+        
+        {
+            "@context": "http://schema.org/",
+            "@type": "dcat:Dataset",
+            "identifier": "imdb_data",
+            "title": "IMDB data sets",
+            "description": "",
+            "modified": "2025-02-26",
+            "distribution": [{
+                    "downloadURL": "https://datasets.imdbws.com/",
+                    "format": "CSV",
+                    "mediaType": "text/csv",
+                    "sizeInBytes": ""
+                }
+            ],
+            "keyword": ["film"],
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "IMDb"
+            },
+            "accessLevel": "public"
+        },
         {
             "@context": "http://schema.org/",
             "@type": "dcat:Dataset",
