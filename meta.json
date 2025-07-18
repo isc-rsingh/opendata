@@ -9,6 +9,27 @@
         {
             "@context": "http://schema.org/",
             "@type": "dcat:Dataset",
+            "identifier": "zillow_data",
+            "title": "Zillow data sets",
+            "description": "",
+            "modified": "2025-07-18",
+            "distribution": [{
+                    "downloadURL": "https://www.zillow.com/research/data/",
+                    "format": "HTML",
+                    "mediaType": "text/html",
+                    "sizeInBytes": ""
+                }
+            ],
+            "keyword": ["housing","construction","mortgage","affordability","sales","rental"],
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Zillow"
+            },
+            "accessLevel": "public"
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "dcat:Dataset",
             "identifier": "imdb_data",
             "title": "IMDB data sets",
             "description": "",
