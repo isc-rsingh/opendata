@@ -1,2 +1,1 @@
-http://rajrsingh.github.io/opendata/index.html
-
+https://isc-rsingh.github.io/opendata/index.html
