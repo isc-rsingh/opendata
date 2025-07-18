@@ -1,0 +1,18 @@
+.data-sets {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.data-set {
+	line-height: 1.4em;
+	padding: 8px;
+	border: 2px solid lightblue;
+	margin: 16px 8px;
+	border-radius: 8px;
+	width: 400px;
+    height: 300px;
+	color: darkslategray;
+	font-family: "Aptos", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

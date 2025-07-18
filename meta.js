@@ -11,15 +11,17 @@ const metadata = require('./meta.json')
 
 htmlfile = '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
 htmlfile += '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+htmlfile += '<link rel="stylesheet" href="styles.css">\n'
 htmlfile += '<title>'+metadata.title+'</title>\n'
 htmlfile += '</head>\n'
 htmlfile += '<body>\n'
 htmlfile += '<h1>' + metadata.title + '</h1>\n'
+htmlfile += '<div id="data-sets">\n'
 
 jsonld = ''
 htmlbody = ''
 metadata.datasets.forEach(dataset => {
-    htmlbody += '<div itemscope itemtype="http://schema.org/Dataset" itemid="' + dataset.identifier + '">\n'
+    htmlbody += '<div class="data-set" itemscope itemtype="http://schema.org/Dataset" itemid="' + dataset.identifier + '">\n'
     htmlbody += '<meta itemprop="url" content="' + dataset.distribution[0].downloadURL + '"/>\n'
     jsonld += '<script type="application/ld+json">\n'
     jsonld += '{\n"@context": "http://schema.org",\n'
@@ -60,6 +62,7 @@ htmlfile += jsonld
 htmlfile += htmlbody
 
 
+htmlfile += '</div>\n'
 htmlfile += '</body></html>'
 
 fs.writeFile('index.html', htmlfile, err => {
